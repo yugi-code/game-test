@@ -34,7 +34,7 @@ document.querySelector("#lock-landscape-button").addEventListener('click', funct
 	if(document.documentElement.requestFullscreen)
 		document.querySelector("#container").requestFullscreen();
 	else if(document.documentElement.webkitRequestFullScreen)
-		document.querySelector("#container").webkitRequestFullScreen();
+		document.querySelector("#container").webkitRequestFullscreen();
 
 	screen.orientation.lock("landscape-primary")
 		.then(function() {
